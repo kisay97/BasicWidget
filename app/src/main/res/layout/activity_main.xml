@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.estsoft.basicwidget.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:background="#00000000"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textLabel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INVISIBLE"
+        android:id="@+id/invisibleButton"
+        android:layout_below="@+id/textLabel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GONE"
+        android:id="@+id/goneButton"
+        android:layout_below="@+id/invisibleButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VISIBLE"
+        android:id="@+id/visibleButton"
+        android:layout_below="@+id/goneButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/visibleButton"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:enabled="true" />
+</RelativeLayout>
